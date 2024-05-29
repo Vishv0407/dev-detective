@@ -352,6 +352,16 @@ button:hover{
         font-size: 0.8rem;
     }
 
+    .search-btn{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        margin: 0.6rem 0;
+    }
+
+    .search-container .search-icon{
+        margin-left: 0.3rem;
+    }
+
     .main-container{
         display: flex;
         flex-direction: column;
