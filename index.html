@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="head-container">
+                <h1>DevDetective</h1>
+                <div class="theme">
+                    <p class="theme-name">LIGHT</p>
+                    <img class="theme-icon" src="/images/sun-icon.svg" alt="">
+                </div>
+            </div>
+    
+            <div class="search-container">
+                <div class="bar">
+                    <img class="search-icon" src="/images/search-icon.svg" alt="">
+                    <input placeholder="Enter a GitHub username..." id="searchName">
+                    <img class="close-btn" src="/images/cross.png" alt="">
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+    
+            <div class="main-container">
+                <div class="profile-img">
+                    <img class="user-img" alt="">
+                </div>
+                <div class="content">
+                    <div class="name-div">
+                        <h1 class="user-name"></h1>
+                        <p class="user-join-date"></p>
+                    </div>
+                    <a class="user-github-username" href=""></a>
+                    <p class="user-bio"></p>
+    
+                    <div class="num-data-container">
+                        <div class="sub-div">
+                            <p class="div-head">Repos</p>
+                            <p class="data user-repo-num"></p>
+                        </div>
+    
+                        <div class="sub-div">
+                            <p class="div-head">Followers</p>
+                            <p class=" data user-followers-num"></p>
+                        </div>
+    
+                        <div class="sub-div">
+                            <p class="div-head">Following</p>
+                            <p class="data user-following-num"></p>
+                        </div>
+                    </div>
+    
+                    <div class="links">
+                        <div class="attachment location">
+                            <img src="/images/location-icon.svg" alt="">
+                            <p class="user-location"></p>
+                        </div>
+    
+                        <div class="attachment website">
+                            <img src="/images/website-icon.svg" alt="">
+                            <a class="user-website"></a>
+                        </div>
+    
+                        <div class="attachment twitter">
+                            <img src="/images/twitter-icon.svg" alt="">
+                            <a class="user-twitter"></a>
+                        </div>
+    
+                        <div class="attachment company">
+                            <img src="/images/company-icon.svg" alt="">
+                            <p class="user-company"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error-container">
+                <img src="/images/not-found.png" alt="">
+                <p>User not found!!</p>
+            </div>
+
+            <div class="loading-container">
+                <img src="/images/loading.gif" alt="">
+                <p>Loading...</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
