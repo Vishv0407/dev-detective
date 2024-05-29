@@ -58,6 +58,7 @@
     padding: 0.5rem;
     height: 70px;
     border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
 }
 
 .bar{
@@ -115,6 +116,7 @@ button:hover{
     background-color: rgb(30,42,71);
     border-radius: 15px;
     margin-top: 1.5rem;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
     /* margin-bottom: 2rem; */
 }
 
@@ -282,6 +284,7 @@ button:hover{
 /* DARK THEME */
 .main-container.activeDark{
     background-color: rgb(254,254,254);
+    box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);;
 }
 
 .main-container.activeDark h1{
@@ -318,6 +321,7 @@ button:hover{
 
 .search-container.activeDark{
     background-color: rgb(254,254,254);
+    box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);;
 }
 
 .search-container.activeDark input{
