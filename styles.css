@@ -355,11 +355,11 @@ button:hover{
     .search-btn{
         padding: 0.5rem;
         font-size: 0.8rem;
-        margin: 0.6rem 0;
+        margin: 0.6rem 0.6rem;
     }
 
     .search-container .search-icon{
-        margin-left: 0.3rem;
+        margin-left: 0.6rem;
     }
 
     .main-container{
