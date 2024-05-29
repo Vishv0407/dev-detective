@@ -349,9 +349,9 @@ button:hover{
     }
 
     ::placeholder{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
-    
+
     .main-container{
         display: flex;
         flex-direction: column;
