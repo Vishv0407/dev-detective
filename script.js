@@ -1,5 +1,6 @@
 const themeName = document.querySelector('.theme-name');
 const themeIcon = document.querySelector('.theme-icon');
+const themeDiv = document.querySelector('.theme');
 
 const searchBtn = document.querySelector('.search-btn');
 const closeBtn = document.querySelector('.close-btn');
@@ -29,7 +30,7 @@ const wrapper = document.querySelector('.wrapper');
 // fetchData("vishv0407");
 mainContainer.classList.add("active");
 
-themeIcon.addEventListener('click', () => {
+themeDiv.addEventListener('click', () => {
 
     if(!mainContainer.classList.contains('activeDark')){
         themeName.innerText = "DARK";
