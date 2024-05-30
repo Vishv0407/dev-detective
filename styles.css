@@ -31,7 +31,9 @@
 
 .head-container h1{
     font-size: 1.75rem;
+    padding-left: 0.25rem;
 }
+
 .theme{
     display: flex;
     align-items: center;
@@ -59,6 +61,7 @@
     height: 70px;
     border-radius: 15px;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    border: 1px solid rgba(256,256,256,0.1);
 }
 
 .bar{
@@ -102,12 +105,20 @@
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover{
     background-color: #60abff;
 }
 
+.close-btn{
+    display: none;
+}
+
+.close-btn.active{
+    display: flex;
+}
 /* Main container */
 
 .main-container{
@@ -117,6 +128,7 @@ button:hover{
     border-radius: 15px;
     margin-top: 1.5rem;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    border: 1px solid rgba(256,256,256, 0.1);
     /* margin-bottom: 2rem; */
 }
 
@@ -129,6 +141,14 @@ button:hover{
 .content{
     width: 100%;
     padding: 0 2.5rem;
+}
+
+.content a{
+    color: #60abff;
+}
+
+.content a:visited{
+    color: #107fff;
 }
 
 .name-div{
@@ -213,20 +233,15 @@ button:hover{
     height: 20px;
 }
 
+.location img{
+    padding-left: 5px;
+    padding-right: 4px;
+}
+
 /* Define the style for non-clickable links */
-.not-available {
+.user-website.not-available, .user-twitter.not-available{
     pointer-events: none;
     text-decoration: none;
-    color: black;
-}
-
-
-.close-btn{
-    display: none;
-}
-
-.close-btn.active{
-    display: flex;
 }
 
 .error-container{
@@ -284,7 +299,8 @@ button:hover{
 /* DARK THEME */
 .main-container.activeDark{
     background-color: rgb(254,254,254);
-    box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .main-container.activeDark h1{
@@ -321,7 +337,8 @@ button:hover{
 
 .search-container.activeDark{
     background-color: rgb(254,254,254);
-    box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .search-container.activeDark input{

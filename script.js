@@ -26,7 +26,7 @@ const loadingContainer = document.querySelector('.loading-container');
 const searchInput = document.getElementById('searchName');
 const wrapper = document.querySelector('.wrapper');
 
-// fetchData("vishv0407");
+fetchData("vishv0407");
 mainContainer.classList.add("active");
 
 themeIcon.addEventListener('click', () => {
@@ -131,7 +131,7 @@ function renderData(result){
 
 function setAnchor(element, href, text) {
     element.innerText = text;
-    if (href && href !== "Not Available" && href !== "null" ) {
+    if (href && href !== "Not Available" && href !== null && !href.endsWith("/null")) {
         element.href = href;
         element.classList.remove('not-available');
     } else {
