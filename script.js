@@ -74,6 +74,7 @@ searchBtn.addEventListener('click', () => {
     const search = document.getElementById('searchName').value;
     loadingContainer.classList.add("active");
     mainContainer.classList.add("active");
+    errorContainer.classList.remove("active");
     fetchData(search);
 })
 
@@ -133,6 +134,7 @@ function setAnchor(element, href, text) {
     element.innerText = text;
     if (href && href !== "Not Available" && href !== null && !href.endsWith("/null")) {
         element.href = href;
+        element.target = "_blank";
         element.classList.remove('not-available');
     } else {
         element.href = "#";

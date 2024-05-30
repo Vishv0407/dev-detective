@@ -225,7 +225,13 @@ button:hover{
 
 .attachment a{
     text-decoration: underline;
+    color: #60abff;
 }
+
+.attachment a:visited{
+    color: #107fff;
+}
+
 .attachment img{
     margin-right: 0.75rem;
     /* width: 20px; */
@@ -241,6 +247,7 @@ button:hover{
 .user-website.not-available, .user-twitter.not-available{
     pointer-events: none;
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.52);
 }
 
 .error-container{
@@ -326,8 +333,13 @@ button:hover{
     color: rgba(0, 0, 0, 0.80);
 }
 
-.main-container.activeDark .links a{
-    color: rgba(75, 106, 168, 0.737);
+.main-container.activeDark a{
+    text-decoration: underline;
+    color: #60abff;
+}
+
+.main-container.activeDark a:visited{
+    color: #107fff;
 }
 
 .main-container.activeDark .links p{
