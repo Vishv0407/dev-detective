@@ -26,7 +26,7 @@ const loadingContainer = document.querySelector('.loading-container');
 const searchInput = document.getElementById('searchName');
 const wrapper = document.querySelector('.wrapper');
 
-fetchData("vishv0407");
+// fetchData("vishv0407");
 mainContainer.classList.add("active");
 
 themeIcon.addEventListener('click', () => {
