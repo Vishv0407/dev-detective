@@ -32,7 +32,7 @@ mainContainer.classList.add("active");
 
 themeDiv.addEventListener('click', () => {
 
-    if(!mainContainer.classList.contains('activeDark')){
+    if (!mainContainer.classList.contains('activeDark')) {
         themeName.innerText = "DARK";
         themeIcon.src = "/images/moon-icon.svg";
         mainContainer.classList.add('activeDark');
@@ -62,11 +62,11 @@ closeBtn.addEventListener('click', () => {
     // fetchData("vishv0407")
 })
 
-searchInput.addEventListener('input', () =>{
-    if(searchInput.value !== ""){
+searchInput.addEventListener('input', () => {
+    if (searchInput.value !== "") {
         closeBtn.classList.add("active");
     }
-    else{
+    else {
         closeBtn.classList.remove("active");
     }
 })
@@ -81,7 +81,7 @@ searchBtn.addEventListener('click', () => {
 
 async function fetchData(githubUsername2) {
     // console.log(githubUsername2);
-    try{
+    try {
         const response = await fetch(`https://api.github.com/users/${githubUsername2}`);
 
         // Check if the response status is 404 (user not found)
@@ -93,7 +93,7 @@ async function fetchData(githubUsername2) {
         const result = await response.json();
         renderData(result);
     }
-    catch(e){
+    catch (e) {
         console.log("ye error aaya bhai" + e.message);
         mainContainer.classList.add("error");
         errorContainer.classList.add("active");
@@ -101,14 +101,14 @@ async function fetchData(githubUsername2) {
     }
 }
 
-function renderData(result){
+function renderData(result) {
 
     mainContainer.classList.remove("active");
     errorContainer.classList.remove("active");
 
     userImage.src = result?.avatar_url;
     userName.innerText = result?.name || result?.login;
-    joinDate.innerText = `Joined `+formatDate(result?.created_at);
+    joinDate.innerText = `Joined ` + formatDate(result?.created_at);
     githubUsername.href = `https://github.com/${result.login}`;
     githubUsername.innerText = `@` + result.login;
     userBio.innerText = result?.bio || "this profile has no bio";
@@ -122,10 +122,10 @@ function renderData(result){
     userCompany.innerText = result?.company || "Not Available";
 
     const tempName = result?.name;
-    if(tempName === null){
+    if (tempName === null) {
         userName.innerText = result?.login;
     }
-    else{
+    else {
         userName.innerText = result?.name;
     }
 
@@ -143,7 +143,7 @@ function setAnchor(element, href, text) {
     }
 }
 
-function formatDate(dateString){
+function formatDate(dateString) {
     // Create a Date object
     const date = new Date(dateString);
 
@@ -158,6 +158,6 @@ function formatDate(dateString){
     // Format the date as "22 Feb 2023"
     const formattedDate = `${day} ${month} ${year}`;
 
-    return formattedDate; 
+    return formattedDate;
     // Output: "22 Feb 2023"
 }

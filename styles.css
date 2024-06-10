@@ -1,27 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Mono", monospace;
 }
 
-.wrapper{
+.wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(21,29,46);
+    background-color: rgb(21, 29, 46);
 }
 
-.container{
+.container {
     max-width: 700px;
     width: 90%;
 }
 
 /* Head container */
-.head-container{
+.head-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,24 +29,24 @@
     margin-bottom: 2rem;
 }
 
-.head-container h1{
+.head-container h1 {
     font-size: 1.75rem;
     padding-left: 0.25rem;
 }
 
-.theme{
+.theme {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
 }
 
-.theme-name{
+.theme-name {
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
 }
 
-.theme-icon{
+.theme-icon {
     width: 20px;
     height: 20px;
     color: red;
@@ -55,51 +55,52 @@
 
 /* Search container */
 
-.search-container{
-    background-color: rgb(30,42,71);
+.search-container {
+    background-color: rgb(30, 42, 71);
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
     height: 70px;
     border-radius: 15px;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.15);
-    border: 1px solid rgba(256,256,256,0.1);
+    border: 1px solid rgba(256, 256, 256, 0.1);
 }
 
-.bar{
+.bar {
     display: flex;
     align-items: center;
     flex-direction: row;
     width: 95%;
 }
 
-.bar img{
+.bar img {
     width: 20px;
     height: 20px;
     margin: 0 1rem;
 
 }
-.bar input{
+
+.bar input {
     /* all: unset; */
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
-    width: 100%; 
+    width: 100%;
     color: white;
     font-size: 1.1rem;
     outline: none;
 }
 
-::placeholder:focus{
+::placeholder:focus {
     outline: none;
 }
 
-::placeholder{
+::placeholder {
     font-size: 1.1rem;
     color: white;
 }
 
-.search-btn{
-    background-color: rgb(0,120,254);
+.search-btn {
+    background-color: rgb(0, 120, 254);
     padding: 1rem 2rem;
     color: white;
     font-size: 1rem;
@@ -109,50 +110,51 @@
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #60abff;
 }
 
-.close-btn{
+.close-btn {
     display: none;
 }
 
-.close-btn.active{
+.close-btn.active {
     display: flex;
 }
+
 /* Main container */
 
-.main-container{
+.main-container {
     display: flex;
     flex-direction: row;
-    background-color: rgb(30,42,71);
+    background-color: rgb(30, 42, 71);
     border-radius: 15px;
     margin-top: 1.5rem;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.15);
-    border: 1px solid rgba(256,256,256, 0.1);
+    border: 1px solid rgba(256, 256, 256, 0.1);
     /* margin-bottom: 2rem; */
 }
 
-.profile-img img{
+.profile-img img {
     width: 115px;
     border-radius: 50%;
     margin: 2rem 0 2rem 2.5rem;
 }
 
-.content{
+.content {
     width: 100%;
     padding: 0 2.5rem;
 }
 
-.content a{
+.content a {
     color: #60abff;
 }
 
-.content a:visited{
+.content a:visited {
     color: #107fff;
 }
 
-.name-div{
+.name-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -161,22 +163,22 @@ button:hover{
     color: white;
 }
 
-.name-div p{
+.name-div p {
     /* margin-right: 2rem; */
     font-size: 1rem;
 }
 
-.name-div h1{
+.name-div h1 {
     font-size: 1.6rem;
 }
 
-.user-bio{
+.user-bio {
     margin: 1rem 0;
     color: rgba(255, 255, 255, 0.724);
 }
 
-.num-data-container{
-    background-color: rgb(21,29,46);
+.num-data-container {
+    background-color: rgb(21, 29, 46);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -187,7 +189,7 @@ button:hover{
     /* align-items: center; */
 }
 
-.sub-div{
+.sub-div {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -196,18 +198,18 @@ button:hover{
     row-gap: 0.5rem;
 }
 
-.sub-div .div-head{
+.sub-div .div-head {
     font-size: 0.8rem;
     padding-top: 1rem;
 }
 
-.sub-div .data{
+.sub-div .data {
     font-size: 1.25rem;
     font-weight: 800;
     padding-bottom: 1rem;
 }
 
-.links{
+.links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -215,55 +217,57 @@ button:hover{
     margin-bottom: 2rem;
 }
 
-.attachment{
+.attachment {
     display: flex;
     flex-direction: row;
 }
 
-.attachment, .attachment a{
+.attachment,
+.attachment a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.52);
 }
 
-.attachment a{
+.attachment a {
     text-decoration: underline;
     color: #60abff;
 }
 
-.attachment a:visited{
+.attachment a:visited {
     color: #107fff;
 }
 
-.attachment img{
+.attachment img {
     margin-right: 0.75rem;
     /* width: 20px; */
     height: 20px;
 }
 
-.location img{
+.location img {
     padding-left: 5px;
     padding-right: 4px;
 }
 
 /* Define the style for non-clickable links */
-.user-website.not-available, .user-twitter.not-available{
+.user-website.not-available,
+.user-twitter.not-available {
     pointer-events: none;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.52);
 }
 
-.error-container{
+.error-container {
     display: none;
     flex-direction: column;
 }
 
-.error-container img{
+.error-container img {
     width: 200px;
     margin: auto;
     margin-top: 2.5rem;
 }
 
-.error-container p{
+.error-container p {
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
@@ -271,27 +275,27 @@ button:hover{
     color: white;
 }
 
-.error-container.active{
+.error-container.active {
     display: flex;
 }
 
-.main-container.active{
+.main-container.active {
     display: none;
 }
 
-.loading-container{
+.loading-container {
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.loading-container img{
+.loading-container img {
     width: 200px;
     height: 200px;
 }
 
-.loading-container p{
+.loading-container p {
     color: white;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -299,96 +303,96 @@ button:hover{
     font-weight: 600;
 }
 
-.loading-container.active{
+.loading-container.active {
     display: flex;
 }
 
 
 /* DARK THEME */
-.main-container.activeDark{
-    background-color: rgb(254,254,254);
+.main-container.activeDark {
+    background-color: rgb(254, 254, 254);
     box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.main-container.activeDark h1{
+.main-container.activeDark h1 {
     color: rgba(0, 0, 0, 0.80);
 }
 
-.main-container.activeDark .user-join-date{
-    color: rgb(75,106,168);
+.main-container.activeDark .user-join-date {
+    color: rgb(75, 106, 168);
 }
 
-.main-container.activeDark .user-bio{
-    color: rgb(121,143,181);
+.main-container.activeDark .user-bio {
+    color: rgb(121, 143, 181);
 }
 
-.main-container.activeDark .num-data-container{
-    background-color: rgb(246,248,255);
+.main-container.activeDark .num-data-container {
+    background-color: rgb(246, 248, 255);
 }
 
-.main-container.activeDark .div-head{
-    color: rgb(75,106,168);
+.main-container.activeDark .div-head {
+    color: rgb(75, 106, 168);
 }
 
-.main-container.activeDark .data{
+.main-container.activeDark .data {
     color: rgba(0, 0, 0, 0.80);
 }
 
-.main-container.activeDark a{
+.main-container.activeDark a {
     text-decoration: underline;
     color: #60abff;
 }
 
-.main-container.activeDark a:visited{
+.main-container.activeDark a:visited {
     color: #107fff;
 }
 
-.main-container.activeDark .links p{
-    color: rgba(75,106,168, 0.737);
+.main-container.activeDark .links p {
+    color: rgba(75, 106, 168, 0.737);
 }
 
-.main-container.activeDark .user-website.not-available{
+.main-container.activeDark .user-website.not-available {
     pointer-events: none;
     text-decoration: none;
-    color: rgb(122,145,191);
+    color: rgb(122, 145, 191);
 }
 
-.main-container.activeDark .user-twitter.not-available{
+.main-container.activeDark .user-twitter.not-available {
     pointer-events: none;
     text-decoration: none;
-    color: rgb(122,145,191);
+    color: rgb(122, 145, 191);
 }
 
-.search-container.activeDark{
-    background-color: rgb(254,254,254);
+.search-container.activeDark {
+    background-color: rgb(254, 254, 254);
     box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.search-container.activeDark input{
-    color: rgb(75,106,168);
+.search-container.activeDark input {
+    color: rgb(75, 106, 168);
 }
 
-.search-container.activeDark ::placeholder{
-    color: rgb(75,106,168);
+.search-container.activeDark ::placeholder {
+    color: rgb(75, 106, 168);
 }
 
 .head-container.activeDark {
-    color: rgb(75,106,155);
+    color: rgb(75, 106, 155);
 }
 
-.error-container.activeDark p{
+.error-container.activeDark p {
     color: rgba(0, 0, 0, 0.75);
 }
 
-.loading-container.activeDark p{
+.loading-container.activeDark p {
     color: black;
 }
 
 @media (max-width: 768px) {
 
-    .wrapper{
+    .wrapper {
         min-height: 100vh;
         height: 100%;
         max-height: 175vh;
@@ -396,64 +400,65 @@ button:hover{
         padding-top: 2rem;
     }
 
-    ::placeholder{
+    ::placeholder {
         font-size: 0.8rem;
     }
 
-    .search-btn{
+    .search-btn {
         padding: 0.5rem;
         font-size: 0.8rem;
         margin: 0.6rem 0.6rem;
     }
 
-    .search-container .search-icon{
+    .search-container .search-icon {
         margin-left: 0.6rem;
     }
 
-    .main-container{
+    .main-container {
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
         margin-bottom: 3rem;
     }
 
-    .profile-img{
+    .profile-img {
         display: flex;
-        justify-content: center ;
+        justify-content: center;
         align-items: center;
         /* margin: 1rem 1rem; */
         margin-right: 2rem;
     }
 
-    .name-div{
+    .name-div {
         margin-top: 0;
         display: flex;
         flex-direction: column;
     }
 
-    .content a{
+    .content a {
         display: flex;
         justify-content: center;
         margin: 1rem 0;
     }
 
-    .content p{
+    .content p {
         /* display: block; */
         text-align: center;
     }
 
-    .links{
+    .links {
         display: flex;
         flex-direction: column;
         row-gap: 1.5rem;
     }
 
-    .attachment{
+    .attachment {
         display: flex;
         align-items: center;
     }
 
-    .attachment a{
-        margin: 0;;
+    .attachment a {
+        margin: 0;
+        ;
     }
 }
